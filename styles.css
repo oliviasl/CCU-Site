@@ -21,18 +21,19 @@ footer p {
 }
 
 nav a {
-    color: darkcyan;
+    color: darkred;
+    background-color: white;
     text-decoration: none;
     padding-left: 5vw;
     padding-right: 5vw;
-    padding-top: 3vh;
-    padding-bottom: 3vh;
-    border-radius: 5%;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
+    font-size: 2.5vh;
 }
 
 nav a:hover {
     color: white;
-    background-color: darkcyan;
+    background-color: darkred;
     animation: navfade;
     animation-duration: 200ms;
     text-decoration: none;
@@ -40,18 +41,21 @@ nav a:hover {
 
 @keyframes navfade {
     from {
-        color: darkcyan;
-        background-color: transparent;
+        color: darkred;
+        background-color: white;
     }
     to {
-        color: white;
-        background-color: darkcyan;
+        background-color: darkred;
+        color:white
     }
 }
 
 nav {
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding-top: 25px;
+    padding-bottom: 15px;
+    background-color: white;
+    z-index: 2;
+    width: 100vw;
 }
 
 nav ul {
@@ -63,11 +67,23 @@ nav ul li {
     display: inline;
 }
 
+.home-nav {
+    left: 50%;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 0;
+}
+
 .banner {
     height: 100vh;
     width: 100%;
     display: block;
     text-align: center;
+    background-image: url("assets/CCUBanner.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: relative;
 }
 
 .sect {
@@ -84,7 +100,7 @@ nav ul li {
 
 .sect-header {
     margin-bottom: 7vh;
-    color: darkcyan;
+    color: darkred;
 }
 
 .col-lg-6 {
