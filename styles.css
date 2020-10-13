@@ -1,0 +1,127 @@
+body {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+footer {
+    text-align: center;
+    padding-bottom: 10vh;
+}
+
+footer p {
+    font-size: 2vh;
+}
+
+.sect a {
+    text-decoration: none;
+    color: darkred;
+}
+
+.sect a:hover {
+    color: darkred;
+}
+
+nav a {
+    color: darkcyan;
+    text-decoration: none;
+    padding-left: 5vw;
+    padding-right: 5vw;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+    border-radius: 5%;
+}
+
+nav a:hover {
+    color: white;
+    background-color: darkcyan;
+    animation: navfade;
+    animation-duration: 200ms;
+    text-decoration: none;
+}
+
+@keyframes navfade {
+    from {
+        color: darkcyan;
+        background-color: transparent;
+    }
+    to {
+        color: white;
+        background-color: darkcyan;
+    }
+}
+
+nav {
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    display: inline;
+}
+
+.banner {
+    height: 100vh;
+    width: 100%;
+    display: block;
+    text-align: center;
+}
+
+.sect {
+    padding-left: 20vw;
+    padding-right: 20vw;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    text-align: center;
+}
+
+.altBackground {
+    background-color: #d2ebf7;
+}
+
+.sect-header {
+    margin-bottom: 7vh;
+    color: darkcyan;
+}
+
+.col-lg-6 {
+    margin-bottom: 5vh;
+}
+
+
+@media (max-width: 991px){
+    .mission-img {
+        width: 90%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .sect h3 {
+        font-size: 3.5vh;
+    }
+
+    .sect h4 {
+        font-size: 3vh;
+    }
+    
+}
+
+@media (min-width: 992px){
+    .mission-img {
+        width: 100%;
+        margin-top: 2vh;
+        margin-bottom: 2vh;
+    }
+
+    .sect h3 {
+        font-size: 2vw;
+    }
+
+    .sect h4 {
+        font-size: 1.5vw;
+    }
+    
+}
